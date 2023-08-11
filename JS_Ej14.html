@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <title>Ejercicio 14</title>
+</head>
+
+<body class="bg-success p-2 text-white bg-opacity-75">
+
+    <h1>Registrar un libro</h1>
+
+    <form id="form">
+        <label for="isbn">Ingrese el ISBN</label><br>
+        <input type="text" name="isbn" id="isbn"><br>
+
+        <label for="titulo">Ingrese el titulo</label><br>
+        <input type="text" name="titulo" id="titulo"><br>
+
+        <label for="autor">Ingrese el autor</label><br>
+        <input type="text" name="autor" id="autor"><br>
+
+        <label for="pagina">Ingrese Nro de pagina</label><br>
+        <input type="number" name="pagina" id="pagina"><br>
+
+        </select>
+        <br>
+
+        <button type="button" class="btn btn-outline-success" onclick="cargarLibro()">Enviar</button>
+        <button type="button" class="btn btn-outline-danger">Borrar</button>
+
+    </form>
+
+    <div id="objeto">
+      
+      <h2>Información del Libro:</h2>
+         
+        <p><strong>ISBN:</strong> <span id="isbn"></span></p>
+        <p><strong>Título:</strong> <span id="titulo"></span></p>
+        <p><strong>Autor:</strong> <span id="autor"></span></p>
+        <p><strong>Número de Páginas:</strong> <span id="pagina"></span></p>
+    </div>    
+    <script src="JS_Ej14.js"> </script>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
